@@ -49,7 +49,7 @@ node default {
   owner => 'root',
   group => 'root',
   mode => '0644',
-  comment => "Today I learned something."
+  content => "Today I learned something."
   }
   
 }
