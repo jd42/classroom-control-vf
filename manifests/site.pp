@@ -60,5 +60,13 @@ host { 'testing.puppetlabs.vm':
 ensure => present,
 ip => '127.0.0.1',
 }
+
+node default {
+# This is where you can declare classes for all nodes.
+# Example:
+# class { 'my_class': }
+$message = hiera('message')
+notify { $message: }
+}
   
 }
